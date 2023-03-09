@@ -19,6 +19,14 @@ const School = db.define("school", {
     type: Sequelize.STRING,
     allowNull: false,
   },
+  tuition_in_state: {
+    type: Sequelize.INTEGER,
+    allowNull: true,
+  },
+  tuition_out_state: {
+    type: Sequelize.INTEGER,
+    allowNull: true,
+  },
   championships_and_awards: {
     type: Sequelize.TEXT,
     allowNull: true,
