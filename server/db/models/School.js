@@ -7,6 +7,10 @@ const School = db.define("school", {
     primaryKey: true,
     autoIncrement: true,
   },
+  coach: {
+    type: Sequelize.STRING,
+    allowNull: false,
+  },
   school_name: {
     type: Sequelize.STRING,
     allowNull: false,
