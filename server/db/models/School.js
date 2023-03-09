@@ -7,6 +7,10 @@ const School = db.define("school", {
     primaryKey: true,
     autoIncrement: true,
   },
+  coach: {
+    type: Sequelize.STRING,
+    allowNull: false,
+  },
   school_name: {
     type: Sequelize.STRING,
     allowNull: false,
@@ -18,6 +22,14 @@ const School = db.define("school", {
   location: {
     type: Sequelize.STRING,
     allowNull: false,
+  },
+  tuition_in_state: {
+    type: Sequelize.INTEGER,
+    allowNull: true,
+  },
+  tuition_out_state: {
+    type: Sequelize.INTEGER,
+    allowNull: true,
   },
   championships_and_awards: {
     type: Sequelize.TEXT,
